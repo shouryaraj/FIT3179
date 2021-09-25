@@ -1,0 +1,12 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {"text": "Successful climb year wise"},
+    "data": {
+      "url": "https://raw.githubusercontent.com/shouryaraj/FIT3179/main/everst_success_summit.csv"
+    },
+    "mark": "bar",
+    "encoding": {
+      "y": {"field": "mbrcnt", "type": "quantitative"},
+      "x": {"field": "label", "type": "nominal"}
+    }
+  }

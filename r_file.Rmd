@@ -22,8 +22,37 @@ library("tidyverse")
 library("rwalkr")
 ```
 ```{r}
-people <- read.csv("everest_success_summit_citizenship.csv", fileEncoding="utf-16-be")
-head(world_pop)
+people <- read.csv("everest_success_summit_citizenship.csv")
+head(people)
+citizen_success_count <- people %>% group_by(citizen)  %>% summarize(count=n())
+citizen_success_count
+write.csv(citizen_success_count, "citizen_success_count.csv")
+```
+
+```{r}
+females <- read.csv("female_success_everest.csv")
+head(females)
+citizen_success_count_female <- females %>% group_by(citizen)  %>% summarize(count=n())
+head(citizen_success_count_female)
+write.csv(citizen_success_count_female, "citizen_success_count_female.csv")
+```
+
+
+```{r}
+males <- read.csv("male_success_everest.csv")
+head(males)
+citizen_success_count_male <- males %>% group_by(citizen)  %>% summarize(count=n())
+head(citizen_success_count_male)
+write.csv(citizen_success_count_male, "citizen_success_count_males.csv")
+```
+
+```{r}
+people <- read.csv("everest_success_summit_citizenship.csv")
+head(people)
+citizen_success_count <- people %>% group_by(citizen)  %>% summarize(count=n())
+citizen_success_count_max <- citizen_success_count %>% arrange(desc(count))
+head(citizen_success_count_max)
+write.csv(citizen_success_count_max, "citizen_success_count_max.csv")
 
 ```
 

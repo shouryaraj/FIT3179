@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+  
+  
+  <!-- CSS file
+  <link rel="stylesheet" type="text/css" href="css/styles.css" media="all"> -->
+  
+</head>
+<style>
+  .container-style {
+    background-color: rgb(242,240,243);
+  }
+  .container-img{
+    opacity: 80%;
+    
+  }
+  #img-alpnist{
+    height: 300%;
+    width: 20%;
+  }
+</style>
+<body>
+  <div class="container-style">
+<div>
+  <p>Dream Death Zone</p>
+</div>
+<div>
+
+</div>
+<div id="symbol_map"></div>
+<div class="container-img">
+  <img id=img-alpnist src="img/the-mountains-with-alpinists.jpg">
+  <!-- <img src="img/mountain.jpg"> -->
+</div>
+<div id="top_bar_chart">
+
+</div>
+<div id="donut_chart">
+
+</div>
+<div id="successful_climb">
+
+</div>
+</div>
+
+<script type="text/javascript">
+
+  var spec1 = "js/map.vg.json";
+  vegaEmbed('#symbol_map', spec1).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+  
+  var spec2 = "js/top_country_bar_chart.vg.json";
+  vegaEmbed('#top_bar_chart', spec2).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+
+  var spec3 = "js/gender_ratio.vg.json";
+  vegaEmbed('#donut_chart', spec3).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+
+  var spec4 = "js/successful_climb_over_year.vg.json";
+  vegaEmbed('#successful_climb', spec4).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+</script>
+
+</body>
+</html>
