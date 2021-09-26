@@ -4,10 +4,10 @@
 "3","Algeria",1
 "4","Andorra",1
 "5","Argentina",23
-"6","Argentina/Canada",2
+"6","Canada",2
 "7","Armenia",1
 "8","Australia",124
-"9","Australia/New Zealand",1
+"9","Australia",1
 "10","Austria",73
 "11","Azerbaijan",1
 "12","Azerbaijan/Russia",1
@@ -16,11 +16,11 @@
 "15","Belgium",20
 "16","Bhutan",1
 "17","Bolivia",3
-"18","Bosnia-Herzegovina/USA",1
+"18","USA",1
 "19","Brazil",31
 "20","Bulgaria",16
 "21","Canada",134
-"22","Canada/Macedonia",1
+"22","Canada",1
 "23","Canada/USA",1
 "24","Chile",34
 "25","China",768
@@ -39,8 +39,8 @@
 "38","Estonia",3
 "39","Finland",20
 "40","France",127
-"41","France/Algeria",1
-"42","France/Switzerland",1
+"41","Algeria",1
+"42","Switzerland",1
 "43","France/USA",1
 "44","Georgia",11
 "45","Germany",81
@@ -57,7 +57,7 @@
 "56","Israel",5
 "57","Italy",83
 "58","Japan",252
-"59","Japan/China",1
+"59","China",1
 "60","Jordan",1
 "61","Kazakhstan",17
 "62","Kosovo",5
@@ -129,7 +129,7 @@
 "128","UK/Russia",1
 "129","Ukraine",30
 "130","Uruguay",1
-"131","USA",884
+"131","United States of America",884
 "132","USA/Brazil",1
 "133","USA/Dominican Republic",1
 "134","USA/Ireland",1
@@ -140,5 +140,5 @@
 "139","Uzbekistan",12
 "140","Venezuela",2
 "141","Vietnam",3
-"142","W Germany",13
+"142","Germany",13
 "143","Yugoslavia",11
