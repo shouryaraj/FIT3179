@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": " Dream Everest(10 Oct 2020)",
+  "title": " Everest Summiter (citizenship wise)",
   "width": 800,
   "height": 600,
   "projection": {"type": "equirectangular"},
@@ -15,7 +15,7 @@
         "color": {"value": "#db646f"},
         "tooltip": [
           {"field": "properties.NAME", "type": "nominal", "title": "Country"},
-          {"field": "Count", "type": "quantitative"}
+          {"field": "No Data" }
         ]
       }
     },
@@ -41,11 +41,7 @@
         "color": {
           "field": "count",
           "type": "quantitative",
-          "scale": {
-            "type": "threshold",
-            "domain": [1, 10, 50, 100, 200, 300, 400, 500, 800, 1000],
-          "range": ["#d8daf0", "#c4c7e9", "#b1b5e2", "#9da2db", "#8a90d3", "#4f58bd", "#424bb0" , "#3a429d", "#4c56bc" , "#373f94","#1d214f"]
-          }
+          "scale": {"type": "log"}
         },
         "tooltip": [
           {"field": "properties.NAME", "type": "nominal", "title": "Country"},
