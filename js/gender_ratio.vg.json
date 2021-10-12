@@ -1,17 +1,45 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "description": "A simple donut chart with embedded data.",
-    "data": {
-      "values": [
-        {"category": "Male", "value": 9358 },
-        {"category": "Female", "value": 707}
-      ]
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A simple donut chart with embedded data.",
+  "width": "container",
+  "height": 200,
+  "data": {
+    "values": [
+      { "category": "Male", "value": 9358 },
+      { "category": "Female", "value": 707 }
+    ]
+  },
+  "encoding": {
+    "theta": { "field": "value", "type": "quantitative" },
+    "color": { "field": "category", "type": "nominal" }
+  },
+  "layer": [
+    {
+      "mark": { "type": "arc", "innerRadius": 50 },
+      "encoding": {
+        "theta": { "field": "value", "type": "quantitative" },
+        "color": { "field": "category", "type": "nominal" },
+        "tooltip": [
+          { "field": "value", "type": "quantitative" },
+          { "field": "category", "type": "nominal" }
+        ]
+      }
     },
-    "mark": {"type": "arc", "innerRadius": 50},
-    "encoding": {
-      "theta": {"field": "value", "type": "quantitative"},
-      "color": {"field": "category", "type": "nominal"}
+    {
+      "mark": { "type": "text", "radius": 120 },
+      "encoding": {
+        "text": { "field": "category", "type": "nominal" }
+      }
     },
-    "view": {"stroke": null}
-  }
-  
+    {
+      "mark": { "type": "text", "radius": 110 },
+      "encoding": {
+        
+        "text": { "field": "value", "type": "quantitative" },
+        "color": {"value": "black"}
+      }
+    }
+  ],
+
+  "view": { "stroke": null }
+}

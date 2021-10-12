@@ -1,10 +1,50 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title":{"text": "Most Summits Nationality wise"},
-    "data": {"url": "https://raw.githubusercontent.com/shouryaraj/FIT3179/main/citizen_success_top_count.csv"},
-    "mark": "bar",
-    "encoding":{
-      "x": {"field": "count", "type": "quantitative"},
-      "y": {"field": "citizen", "type": "nominal", "sort": "-x"}
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": { "text": "Most Summits Nationality wise" },
+  "config": { "view": { "stroke": "" } },
+  "width": "container",
+  "height": 500,
+  "data": {
+    "url": "https://raw.githubusercontent.com/shouryaraj/FIT3179/main/citizen_success_top_count.csv"
+  },
+  "layer": [
+    {
+      "mark": "bar",
+      "encoding": {
+        "y": {
+          "field": "citizen",
+          "type": "nominal",
+          "axis": null
+        },
+        "x": { "field": "count", "type": "quantitative" },
+        "tooltip": [
+          { "field": "count", "type": "quantitative" },
+          { "field": "citizen", "type": "nominal" }
+        ]
+        
+      }
+     
+    },
+    {
+      "mark": {
+        "type": "image",
+        "align": "left",
+        "baseline": "top",
+        "width": 40, "height": 30
+      },
+      "encoding": {
+        "y": {
+          "field": "citizen",
+          "type": "nominal",
+          "axis": null
+        },
+        "x": { "field": "count", "type": "quantitative" },
+        "url": { "field": "country_flag", "type": "ordinal" },
+        "tooltip": [
+          { "field": "citizen", "type": "nominal" }
+        ]
+      },
+      "params": [{ "name": "highlight", "select": "interval" }]
     }
-  }
+  ]
+}
