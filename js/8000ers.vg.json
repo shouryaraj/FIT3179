@@ -1,6 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": { "text": " 8000ers Mountain Height" },
+    "title": { "text": "Top 8000ers Mountains" },
     "width": "container",
     "height": "container",
   "data": {

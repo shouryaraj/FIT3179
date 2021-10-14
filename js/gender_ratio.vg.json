@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "A simple donut chart with embedded data.",
+  "description": "Ratio of Male and female summiteer",
   "width": "container",
   "height": 200,
   "data": {

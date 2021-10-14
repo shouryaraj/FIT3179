@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": " Everest Summiter (citizenship wise)",
+  "title": "Everest Summiteers",
   "width": "container",
   "height": 600,
 
