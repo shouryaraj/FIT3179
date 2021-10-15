@@ -4,6 +4,7 @@
   "config": { "view": { "stroke": "" } },
   "width": "container",
   "height": 500,
+  "background": null,
   "data": {
     "url": "https://raw.githubusercontent.com/shouryaraj/FIT3179/main/citizen_success_top_count.csv"
   },

@@ -64,31 +64,29 @@
     <div class="p-4">
       <div class="d-flex flex-column">
         <div class="p-4 container-style" id="mainBody">
-          <div class="p-4">
-            <p style="font-size: 5em" class="d-flex justify-content-center">
+          <div class="p-2 mb-2">
+            <strong
+              style="font-size: 3em"
+              class="d-flex justify-content-center"
+            >
               Into Thin Air - 8848m
-            </p>
+            </strong>
           </div>
           <div class="row">
             <div class="col-sm-9">
-              <div class="card">
-                <div class="card-body">
-                  <p style="font-size: 1.2em">
-                    <span style="font-size: 1.4em">Mount Everest</span> (Nepali:
-                    Sagarmāthā; Chinese: Zhūmùlǎngmǎ; Tibetan: Chomolungma ) is
-                    Earth's highest mountain above sea level, located in the
-                    Mahalangur Himal sub-range of the Himalayas. Its elevation
-                    (snow height) of
-                    <a
-                      href="https://www.nationalgeographic.com/science/article/new-height-of-mount-everest-announced-by-china-and-nepal"
-                      >8,848.86 m (29,031.7 ft) was most recently established in
-                      2020</a
-                    >
-                    by the Nepali and Chinese authorities.
-                  </p>
-                  <p></p>
-                </div>
-              </div>
+              <p style="font-size: 1.2em">
+                <strong style="font-size: 1.2em">Mount Everest</strong>
+                (Nepali: Sagarmāthā; Chinese: Zhūmùlǎngmǎ; Tibetan: Chomolungma
+                ) is Earth's highest mountain above sea level, located in the
+                Mahalangur Himal sub-range of the Himalayas. Its elevation (snow
+                height) of
+                <a
+                  href="https://www.nationalgeographic.com/science/article/new-height-of-mount-everest-announced-by-china-and-nepal"
+                  >8,848.86 m (29,031.7 ft) was most recently established in
+                  2020</a
+                >
+                by the Nepali and Chinese authorities.
+              </p>
             </div>
             <div class="mb-5 mx-4 col-sm-2" style="opacity: 0.9">
               <img
@@ -100,58 +98,137 @@
           </div>
 
           <div class="row">
-            <div class="col-sm-9">
-              <div class="vega-container" id="symbol_map"></div>
-            </div>
+            <div class="col-sm-12">
+              <h4
+                class="row d-flex justify-content-center"
+                style="font-size: 1.3em"
+              >
+                1st heroes to climb Everest
+              </h4>
+              <div class="row d-flex justify-content-center">
+                <div class="col-sm-2">
+                  <img
+                    class="m-2 p-2 img-fluid rounded-circle"
+                    style="width: 80%"
+                    src="img/tenzing_norgay.jpg"
+                  />
 
-            <div class="mx-5 col-sm-2 my-2">
-              <h5 style="font-size: 1.1em">1st heroes to climb Everest</h5>
-              <img
-                class="m-2 p-2 img-fluid rounded-circle"
-                style="width: 70%"
-                src="img/tenzing_norgay.jpg"
-              />
+                  <strong class="px-4 font-weight-bold">Tenzing Norgay</strong>
+                  <p class="px-4 font-weight-bold">
+                    Nepal<img
+                      class="mx-2"
+                      style="width: 20%"
+                      src="img/country/nepal.png"
+                    />
+                  </p>
+                </div>
 
-              <strong class="px-4 font-weight-bold">Tenzing Norgay</strong>
-              <p class="px-5 font-weight-bold">Nepal<img   class="mx-2" style="width: 20%"
-                src="img/country/nepal.png"/></p>
-
-
-              <img
-                class="m-2 p-2 img-fluid rounded-circle"
-                style="width: 70%"
-                src="img/EdmundHillary.jpg"
-              />
-              <strong class="px-4 font-weight-bold">Edmund Hillary</strong>
-              <p class="px-5 font-weight-bold">New Zealand<img class="mx-2"  style="width: 20%"
-                src="img/country/nz.png"/></p>
+                <div class="col-sm-2">
+                  <img
+                    class="m-2 p-3 img-fluid rounded-circle"
+                    style="width: 80%; height: 71%"
+                    src="img/EdmundHillary.jpg"
+                  />
+                  <strong class="px-4 py-2 font-weight-bold"
+                    >Edmund Hillary</strong
+                  >
+                  <p class="px-4 font-weight-bold">
+                    New Zealand<img
+                      class="mx-2"
+                      style="width: 20%"
+                      src="img/country/nz.png"
+                    />
+                  </p>
+                </div>
+              </div>
+              <div class="row" style="min-height: 500px">
+                <div class="col-sm-12">
+                  <div class="vega-container" id="highestmountains"></div>
+                </div>
+              </div>
+              <div class="mt-5 mb-2 col-sm-12">
+                <div class="vega-container" id="symbol_map"></div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="p-4 container-style" id="mainBody">
-          <div class="m-1 row">
-            <div class="col-sm-9">
+          <div class="p-4 container-style" id="mainBody">
+            <div class="m-1 row">
               <div class="row" style="min-height: 800px">
                 <div class="row">
                   <div class="col-sm-7">
                     <div class="vega-container" id="top_bar_chart"></div>
                   </div>
-                  <div class="col-sm-4"></div>
+                  <div
+                    class="col-sm-4"
+                    style="font-size: 1.1em; font-weight: 500"
+                  >
+                    <p>
+                      Nepalese are the ones who have climbed Everest the most.
+                      The total count since 1953 to 2020 of successful summits
+                      count Nepalese is
+                      <span style="font-size: 1.2em">4859</span>.
+                    <br>
+                    It's not just they want to be the best. The major reason is
+                    that Everest offers bread and butter for them.
+                  </p>
+                    <p>
+                      Sherpa is one of the Nepalese community and most of the
+                      summiteers are Sherpa.
+                    </p>
+                    <p>
+                      Tenzing Norgay is one of the pioneers who climb Everest
+                      first. He also belongs to Sherpa Community.
+                    </p>
+                    <p>
+                      They carry the heaviest loads and pay the highest prices
+                      on the world's tallest mountain. They make it possible for
+                      each aspirant Everest summiteer's ambitions to come true.
+                    </p>
+                  </div>
                 </div>
                 <div class="row">
-                  <div class="col-sm-7">
+                  <div class="mt-5 col-sm-7">
                     <div class="vega-container" id="donut_chart"></div>
                   </div>
-                  <div class="col-sm-4"></div>
+                  <div class="col-sm-4">
+                    <div class="row d-flex justify-content-center">
+                      <div class="col-sm-8">
+                        <img
+                          class="m-2 p-3 img-fluid rounded-circle"
+                          style="width: 70%; height: 65%"
+                          src="img/junko_tabei.jpg"
+                        />
+                        <strong class="px-5 py-2 font-weight-bold"
+                          >Junko Tabei</strong
+                        >
+                        <p class="mx-1 px-5 font-weight-bold">
+                          Japan<img
+                            class="mx-2"
+                            style="width: 20%"
+                            src="img/country/jp.png"
+                          />
+                        </p>
+                      </div>
+                    </div>
+                    <p style="font-size: 1.1em; font-weight: 500">
+                      <a href="https://en.wikipedia.org/wiki/Junko_Tabei"
+                        >Junko Tabei</a
+                      >, a Japanese climber, was the first woman to summit
+                      Everest in 1975 , leading an all-female crew. Since then,
+                      a growing number of female climbers have picked up the
+                      challenge. In comparison to Male Summiteers however, it is
+                      still a smaller number.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-sm-3">
-              <div class="vega-container" id="highestmountains"></div>
-            </div>
           </div>
-          <div class="m-3 row">
+          <div class="mt-5 row">
+            <div class="col-sm-12">
+              <p>First Successful summit on 1953 2 person and 2015 incident</p>
+            </div>
             <div class="col-sm-12">
               <div
                 style="opacity: 1"
@@ -166,7 +243,8 @@
     <div class="">
       <div style="font-size: 1.2em" class="d-flex justify-content-center">
         <p>
-          This visualization is created by&nbsp;<span>Shourya Raj. &#128512;
+          This visualization is created by&nbsp;<span
+            >Shourya Raj. &#128512;
           </span>
         </p>
         <br />
@@ -204,7 +282,7 @@
       })
       .catch(console.error);
     var spec5 = "js/8000ers.vg.json";
-    vegaEmbed("#highestmountains", spec5, { actions: false })
+    vegaEmbed("#highestmountains", spec5)
       .then(function (result) {
         // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
       })

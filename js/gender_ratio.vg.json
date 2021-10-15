@@ -2,7 +2,8 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "Ratio of Male and female summiteer",
   "width": "container",
-  "height": 200,
+  "height": 300,
+  "background": null,
   "data": {
     "values": [
       { "category": "Male", "value": 9358 },
@@ -15,7 +16,7 @@
   },
   "layer": [
     {
-      "mark": { "type": "arc", "innerRadius": 50 },
+      "mark": { "type": "arc", "innerRadius": 80 },
       "encoding": {
         "theta": { "field": "value", "type": "quantitative" },
         "color": { "field": "category", "type": "nominal" },
@@ -26,13 +27,13 @@
       }
     },
     {
-      "mark": { "type": "text", "radius": 120 },
+      "mark": { "type": "text", "radius": 200 },
       "encoding": {
         "text": { "field": "category", "type": "nominal" }
       }
     },
     {
-      "mark": { "type": "text", "radius": 110 },
+      "mark": { "type": "text", "radius": 180 },
       "encoding": {
         
         "text": { "field": "value", "type": "quantitative" },

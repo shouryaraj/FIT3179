@@ -3,7 +3,7 @@
   "title": "Everest Summiteers",
   "width": "container",
   "height": 600,
-
+  
   "projection": {"type": "equirectangular"},
   "params": [
     {

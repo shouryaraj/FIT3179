@@ -3,6 +3,7 @@
   "title": {"text": "Successful climb to Everest"},
   "width": "container",
   "height": 300,
+
   "data": {
     "url": "https://raw.githubusercontent.com/shouryaraj/FIT3179/main/everst_success_summit.csv"
   },

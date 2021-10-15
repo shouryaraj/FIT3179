@@ -31,7 +31,7 @@
             "condition": { "param": "highlight", "value": "rgb(194,81,64)" },
             "value": "rgb(167,165,156)"
           },
-          "size": { "value": 0.01 },
+          "size": { "value": 0.02 },
           "tooltip": [
             { "field": "height", "type": "quantitative" },
             { "field": "mountain_name", "type": "ordinal" }
@@ -42,22 +42,20 @@
       {
         "mark": {
           "type": "text",
-          "align": "right",
-          "baseline": "middle",
-          "dx": 70,
-          "dy": 15,
-          "fontSize": 11.5,
+          "align": "left",
+          "baseline": "top",
+          "dx": 30,
+          "dy": -1,
+          "fontSize": 12.5,
           "fontStyle": "italic"
         },
         "encoding": {
           "text": { "field": "mountain_name", "type": "ordinal" },
           "color": { "value": "black" },
-          "opacity": {
-            "condition": {
-              "test": "datum['mountain_name'] == 'Everest' | datum['mountain_name'] == 'Manaslu'", 
-              "value" : 1
-            }, "value" : 0
-          }
+          "tooltip": [
+            { "field": "height", "type": "quantitative" },
+            { "field": "mountain_name", "type": "ordinal" }
+          ]
         }
       }
     ]
