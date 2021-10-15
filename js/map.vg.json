@@ -1,9 +1,13 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Everest Summiteers",
   "width": "container",
   "height": 600,
-  
+  "title": {
+    "text": "Everest Summiteers",
+    "color": "black",
+    "fontSize": 30,
+    "anchor": "middle"
+  },
   "projection": {"type": "equirectangular"},
   "params": [
     {
@@ -14,7 +18,7 @@
         "min": 0,
         "max": 1000,
         "step": 10,
-        "name": "COUNT "
+        "name": "Number Of Climbers Great Than "
       }
     }
   ],

@@ -1,6 +1,11 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": { "text": "Top 8000ers Mountains" },
+    "title": {
+      "text": "Top 8000 meters above Mountains",
+      "color": "black",
+      "fontSize": 25,
+      "anchor": "middle"
+    },
     "width": "container",
     "height": "container",
   "data": {

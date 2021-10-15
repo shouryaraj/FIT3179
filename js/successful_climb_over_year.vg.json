@@ -1,14 +1,19 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": {"text": "Successful climb to Everest"},
   "width": "container",
-  "height": 300,
-
+  "height": 400,
+  "title": {
+    "text": "Successful Climb to Everest Year Wise",
+    "color": "black",
+    "fontSize": 25,
+    "anchor": "middle",
+    "dy": -10
+  },
   "data": {
     "url": "https://raw.githubusercontent.com/shouryaraj/FIT3179/main/everst_success_summit.csv"
   },
   "params": [
-      {
+    {
       "name": "year_slider",
       "value": 1952,
       "bind": {
@@ -21,19 +26,22 @@
     }
   ],
   "encoding": {
-    "x": {"field": "year", "type": "nominal"},
-    "y": {"field": "mbrcnt", "type": "quantitative"},
-    "fillOpacity": {"condition": {"param": "select", "value": 1}, "value": 0.3},
+    "x": { "field": "year", "type": "nominal" },
+    "y": { "field": "mbrcnt", "type": "quantitative" },
+    "fillOpacity": {
+      "condition": { "param": "select", "value": 1 },
+      "value": 0.3
+    },
     "strokeWidth": {
       "condition": [
-        {"param": "select", "empty": false, "value": 2},
-        {"param": "highlight", "empty": false, "value": 1}
+        { "param": "select", "empty": false, "value": 2 },
+        { "param": "highlight", "empty": false, "value": 1 }
       ],
       "value": 0
     },
     "tooltip": [
-      {"field": "year", "type": "nominal"},
-      {"field": "mbrcnt", "type": "quantitative"}
+      { "field": "year", "type": "nominal" },
+      { "field": "mbrcnt", "type": "quantitative" }
     ]
   },
   "layer": [
@@ -44,11 +52,15 @@
         "stroke": "black",
         "cursor": "pointer"
       },
-        "params": [
-    {"name": "highlight", "select": {"type": "point", "on": "mouseover"}},
-    {"name": "select", "select": "point"}],
+      "params": [
+        {
+          "name": "highlight",
+          "select": { "type": "point", "on": "mouseover" }
+        },
+        { "name": "select", "select": "point" }
+      ],
 
-      "transform": [ {"filter": "datum.year > year_slider"}]
+      "transform": [{ "filter": "datum.year > year_slider" }]
     },
     {
       "mark": {
@@ -60,19 +72,20 @@
         "fontSize": 11.5,
         "fontStyle": "italic"
       },
-      
-      "transform": [ {"filter": "datum.year > year_slider"}],
+
+      "transform": [{ "filter": "datum.year > year_slider" }],
       "encoding": {
         "text": { "field": "mbrcnt", "type": "quantitative" },
         "color": { "value": "black" },
         "opacity": {
           "condition": {
-            "test": "datum['year'] == '1953'", 
-            "value" : 1
-          }, "value" : 0
+            "test": "datum['year'] == '1953'",
+            "value": 1
+          },
+          "value": 0
         }
       }
     }
   ],
-  "config": {"view": {"stroke": ""}, "scale": {"bandPaddingInner": 0.2}}
+  "config": { "view": { "stroke": "" }, "scale": { "bandPaddingInner": 0.2 } }
 }

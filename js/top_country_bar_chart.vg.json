@@ -1,6 +1,12 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": { "text": "Most Summits Nationality wise" },
+  "title": {
+    "text": "Most Summits Nationality wise",
+    "color": "black",
+    "fontSize": 25,
+    "anchor": "middle",
+    "dy": -10
+  },
   "config": { "view": { "stroke": "" } },
   "width": "container",
   "height": 500,
@@ -22,16 +28,15 @@
           { "field": "count", "type": "quantitative" },
           { "field": "citizen", "type": "nominal" }
         ]
-        
       }
-     
     },
     {
       "mark": {
         "type": "image",
         "align": "left",
         "baseline": "top",
-        "width": 40, "height": 30
+        "width": 40,
+        "height": 30
       },
       "encoding": {
         "y": {
@@ -41,9 +46,7 @@
         },
         "x": { "field": "count", "type": "quantitative" },
         "url": { "field": "country_flag", "type": "ordinal" },
-        "tooltip": [
-          { "field": "citizen", "type": "nominal" }
-        ]
+        "tooltip": [{ "field": "citizen", "type": "nominal" }]
       },
       "params": [{ "name": "highlight", "select": "interval" }]
     }

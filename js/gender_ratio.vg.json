@@ -4,6 +4,13 @@
   "width": "container",
   "height": 300,
   "background": null,
+  "title": {
+    "text": "Summiteers Gender Ratio",
+    "color": "black",
+    "fontSize": 25,
+    "anchor": "middle",
+    "dy": -10
+  },
   "data": {
     "values": [
       { "category": "Male", "value": 9358 },
