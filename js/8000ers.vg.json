@@ -15,7 +15,8 @@
           "x": {
             "field": "mountain_name",
             "type": "ordinal",
-            "title": "Mountain Name",
+            "title": null,
+            "axis": null,
             "sort": "-y"
           },
           "y": {
