@@ -21,7 +21,8 @@
         "y": {
           "field": "citizen",
           "type": "nominal",
-          "axis": null
+          "axis": null,
+          "sort":null
         },
         "x": { "field": "count", "type": "quantitative" },
         "tooltip": [
@@ -42,7 +43,8 @@
         "y": {
           "field": "citizen",
           "type": "nominal",
-          "axis": null
+          "axis": null,
+          "sort":null
         },
         "x": { "field": "count", "type": "quantitative" },
         "url": { "field": "country_flag", "type": "ordinal" },
