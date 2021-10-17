@@ -11,6 +11,7 @@
     "mark": { "font": "san-serif" },
     "title": { "font": "san-serif", "subtitleFont": "san-serif" }
   },
+  "background": null,
   "title": {
     "text": "Successful Climb to Everest Year Wise",
     "color": "black",
