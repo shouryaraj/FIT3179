@@ -26,26 +26,42 @@
   },
   "encoding": {
     "theta": { "field": "value", "type": "quantitative" },
-    "color": { "field": "category", "type": "nominal",  "legend": {"title": "Gender", "labelFontSize": 16, "titleFontSize": 16}}
+    "color": {
+      "field": "category",
+      "type": "nominal",
+      "legend": { "title": "Gender", "labelFontSize": 16, "titleFontSize": 16 }
+    }
   },
   "layer": [
     {
-      "mark": { "type": "arc", "innerRadius": 80 },
+      "mark": { "type": "arc", "innerRadius": 80, "cornerRadius": 5 },
+
       "encoding": {
+    
         "tooltip": [
-          { "field": "value", "type": "quantitative", "title": "Climbers"},
-          { "field": "category", "type": "nominal", "title": "Gender"}
+          { "field": "value", "type": "quantitative", "title": "Climbers" },
+          { "field": "category", "type": "nominal", "title": "Gender" }
         ]
       }
     },
     {
-      "mark": { "type": "text", "radius": 200, "fontSize": 15, "fontWeight": "bold"},
+      "mark": {
+        "type": "text",
+        "radius": 200,
+        "fontSize": 15,
+        "fontWeight": "bold"
+      },
       "encoding": {
         "text": { "field": "category", "type": "nominal" }
       }
     },
     {
-      "mark": { "type": "text", "radius": 180, "fontSize": 15, "fontWeight": "bold"},
+      "mark": {
+        "type": "text",
+        "radius": 180,
+        "fontSize": 15,
+        "fontWeight": "bold"
+      },
       "encoding": {
         "text": { "field": "value", "type": "quantitative" },
         "color": { "value": "black" }
