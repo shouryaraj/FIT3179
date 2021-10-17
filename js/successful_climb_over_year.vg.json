@@ -24,12 +24,12 @@
   "params": [
     {
       "name": "year_slider",
-      "value": 1985,
+      "value": 2000,
       "bind": {
         "input": "range",
         "min": 1952,
-        "max": 2020,
-        "step": 4,
+        "max": 2019,
+        "step": 1,
         "name": "Year"
       }
     }
