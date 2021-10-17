@@ -3,7 +3,7 @@
   "width": "container",
   "height": 400,
   "config": {
-    "view": { "stroke": "" },
+    "view": { "stroke": "transparent" },
     "scale": { "bandPaddingInner": 0.2 },
     "axis": { "labelFont": "san-serif", "titleFont": "san-serif" },
     "legend": { "labelFont": "san-serif", "titleFont": "san-serif" },

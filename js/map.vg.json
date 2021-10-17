@@ -8,6 +8,15 @@
     "fontSize": 30,
     "anchor": "middle"
   },
+  "config": {
+    "view": { "stroke": "transparent" },
+    "scale": { "bandPaddingInner": 0.2 },
+    "axis": { "labelFont": "san-serif", "titleFont": "san-serif" },
+    "legend": { "labelFont": "san-serif", "titleFont": "san-serif" },
+    "header": { "labelFont": "san-serif", "titleFont": "san-serif" },
+    "mark": { "font": "san-serif" },
+    "title": { "font": "san-serif", "subtitleFont": "san-serif" }
+  },
   "projection": {"type": "equirectangular"},
   "params": [
     {
