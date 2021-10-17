@@ -5,8 +5,9 @@
   "title": {
     "text": "Everest Summiteers",
     "color": "black",
-    "fontSize": 30,
-    "anchor": "middle"
+    "fontSize": 25,
+    "anchor": "middle",
+    "dx": 80
   },
   "config": {
     "view": { "stroke": "transparent" },
