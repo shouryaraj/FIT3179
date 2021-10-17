@@ -4,8 +4,15 @@
   "width": "container",
   "height": 300,
   "background": null,
+  "config": {
+    "axis": { "labelFont": "san-serif", "titleFont": "san-serif" },
+    "legend": { "labelFont": "san-serif", "titleFont": "san-serif" },
+    "header": { "labelFont": "san-serif", "titleFont": "san-serif" },
+    "mark": { "font": "san-serif" },
+    "title": { "font": "san-serif", "subtitleFont": "san-serif" }
+  },
   "title": {
-    "text": "Summiteers' Gender Ratio",
+    "text": "Number of Summiteers since 1953",
     "color": "black",
     "fontSize": 25,
     "anchor": "middle",
@@ -19,32 +26,29 @@
   },
   "encoding": {
     "theta": { "field": "value", "type": "quantitative" },
-    "color": { "field": "category", "type": "nominal" }
+    "color": { "field": "category", "type": "nominal",  "legend": {"title": "Gender", "labelFontSize": 16, "titleFontSize": 16}}
   },
   "layer": [
     {
       "mark": { "type": "arc", "innerRadius": 80 },
       "encoding": {
-        "theta": { "field": "value", "type": "quantitative" },
-        "color": { "field": "category", "type": "nominal" },
         "tooltip": [
-          { "field": "value", "type": "quantitative" },
-          { "field": "category", "type": "nominal" }
+          { "field": "value", "type": "quantitative", "title": "Climbers"},
+          { "field": "category", "type": "nominal", "title": "Gender"}
         ]
       }
     },
     {
-      "mark": { "type": "text", "radius": 200 },
+      "mark": { "type": "text", "radius": 200, "fontSize": 15, "fontWeight": "bold"},
       "encoding": {
         "text": { "field": "category", "type": "nominal" }
       }
     },
     {
-      "mark": { "type": "text", "radius": 180 },
+      "mark": { "type": "text", "radius": 180, "fontSize": 15, "fontWeight": "bold"},
       "encoding": {
-        
         "text": { "field": "value", "type": "quantitative" },
-        "color": {"value": "black"}
+        "color": { "value": "black" }
       }
     }
   ],

@@ -7,7 +7,14 @@
     "anchor": "middle",
     "dy": -10
   },
-  "config": { "view": { "stroke": "" } },
+  "config": {
+    "view": { "stroke": "" },
+    "axis": { "labelFont": "san-serif", "titleFont": "san-serif" },
+    "legend": { "labelFont": "san-serif", "titleFont": "san-serif" },
+    "header": { "labelFont": "san-serif", "titleFont": "san-serif" },
+    "mark": { "font": "san-serif" },
+    "title": { "font": "san-serif", "subtitleFont": "san-serif" }
+  },
   "width": "container",
   "height": 500,
   "background": null,
@@ -16,18 +23,27 @@
   },
   "layer": [
     {
-      "mark": "bar",
+      "mark": { "type": "bar", "color": "#8f6e4d" },
       "encoding": {
         "y": {
           "field": "citizen",
           "type": "nominal",
           "axis": null,
-          "sort":null
+          "sort": null
         },
-        "x": { "field": "count", "type": "quantitative" },
+        "x": {
+          "field": "count",
+          "type": "quantitative",
+          "axis": {
+            "title": "Number Of Climbers",
+            "titleFontSize": 16,
+            "labelFontSize": 16,
+            "labelFontWeight": "bold"
+          }
+        },
         "tooltip": [
-          { "field": "count", "type": "quantitative" },
-          { "field": "citizen", "type": "nominal" }
+          { "field": "count", "type": "quantitative", "title": "Number Of Everest Climbers" },
+          { "field": "citizen", "type": "nominal", "title": "Country" }
         ]
       }
     },
@@ -44,11 +60,11 @@
           "field": "citizen",
           "type": "nominal",
           "axis": null,
-          "sort":null
+          "sort": null
         },
         "x": { "field": "count", "type": "quantitative" },
         "url": { "field": "country_flag", "type": "ordinal" },
-        "tooltip": [{ "field": "citizen", "type": "nominal" }]
+        "tooltip": [{ "field": "citizen", "type": "nominal", "title": "Country" }]
       },
       "params": [{ "name": "highlight", "select": "interval" }]
     }

@@ -2,6 +2,15 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": "container",
   "height": 400,
+  "config": {
+    "view": { "stroke": "" },
+    "scale": { "bandPaddingInner": 0.2 },
+    "axis": { "labelFont": "san-serif", "titleFont": "san-serif" },
+    "legend": { "labelFont": "san-serif", "titleFont": "san-serif" },
+    "header": { "labelFont": "san-serif", "titleFont": "san-serif" },
+    "mark": { "font": "san-serif" },
+    "title": { "font": "san-serif", "subtitleFont": "san-serif" }
+  },
   "title": {
     "text": "Successful Climb to Everest Year Wise",
     "color": "black",
@@ -15,7 +24,7 @@
   "params": [
     {
       "name": "year_slider",
-      "value": 1952,
+      "value": 1985,
       "bind": {
         "input": "range",
         "min": 1952,
@@ -26,12 +35,32 @@
     }
   ],
   "encoding": {
-    "x": { "field": "year", "type": "nominal" },
-    "y": { "field": "mbrcnt", "type": "quantitative" },
+    "x": {
+      "field": "year",
+      "type": "nominal",
+      "axis": {
+        "title": "Year",
+        "titleFontSize": 15,
+        "labelFontSize": 15,
+        "labelFontWeight": "bold"
+      }
+    },
+    "y": {
+      "field": "mbrcnt",
+      "type": "quantitative",
+      "axis": {
+        "title": "Number Of Climbers",
+        "titleFontSize": 16,
+        "labelFontSize": 16,
+        "labelFontWeight": "bold"
+      }
+    },
+
     "fillOpacity": {
       "condition": { "param": "select", "value": 1 },
       "value": 0.3
     },
+
     "strokeWidth": {
       "condition": [
         { "param": "select", "empty": false, "value": 2 },
@@ -40,15 +69,15 @@
       "value": 0
     },
     "tooltip": [
-      { "field": "year", "type": "nominal" },
-      { "field": "mbrcnt", "type": "quantitative" }
+      { "field": "mbrcnt", "type": "quantitative", "title": "Number Of Everest Climbers" },
+         { "field": "year", "type": "nominal", "title": "Year"}
     ]
   },
   "layer": [
     {
       "mark": {
         "type": "bar",
-        "fill": "#4C78A8",
+        "fill": "#4f7bd1",
         "stroke": "black",
         "cursor": "pointer"
       },
@@ -86,6 +115,5 @@
         }
       }
     }
-  ],
-  "config": { "view": { "stroke": "" }, "scale": { "bandPaddingInner": 0.2 } }
+  ]
 }
